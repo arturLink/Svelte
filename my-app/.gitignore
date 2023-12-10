@@ -4,4 +4,4 @@
 yarn-error.log
 /__sapper__/
 .idea
-gi
+static/vendor
