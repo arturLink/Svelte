@@ -2,7 +2,7 @@
 <script context="module">
     export  async function  preload ({params}, {token}){
         if(token){
-            this.redirect(302,'/')
+            this.redirect(302,'/overview')
         }
     }
 </script>
@@ -25,13 +25,13 @@
         console.log(response)
         if (response.token) {
             $session.token = response.token;
-            goto('/');
+            goto('/overview');
         }
     }
 </script>
 
 <svelte:head>
-    <title>Sign in • hehehe   </title>
+    <title>Sign in • arghh   </title>
 </svelte:head>
 
 <div class="auth-page">
